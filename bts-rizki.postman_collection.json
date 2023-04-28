@@ -1,0 +1,335 @@
+{
+	"info": {
+		"_postman_id": "bd0060fc-b6e5-4c67-bdc9-36f46f3e85c3",
+		"name": "bts-rizki",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/user/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"rizkifaishal182@gmail.com\",\n    \"username\": \"rizki\",\n    \"password\": \"password\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/user/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"rizki\",\n    \"password\": \"password\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/checklist",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiUml6a2kiLCJwaG9uZSI6IjA4MTI0NTY3ODkiLCJyb2xlIjoiVVNFUiIsImlhdCI6MTY3OTEwMDE2NiwiZXhwIjoxNjc5MTAzNzY2fQ.qIoN1nKjIvjpNBs-iWgiIVJKiTrr6jHSpJNv9SGtZY8",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/checklist",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"checklist"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/checklist",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiUml6a2kiLCJwaG9uZSI6IjA4MTI0NTY3ODkiLCJyb2xlIjoiVVNFUiIsImlhdCI6MTY3OTEwMDE2NiwiZXhwIjoxNjc5MTAzNzY2fQ.qIoN1nKjIvjpNBs-iWgiIVJKiTrr6jHSpJNv9SGtZY8",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"checklist 1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/checklist",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"checklist"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/checklist",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiUml6a2kiLCJwaG9uZSI6IjA4MTI0NTY3ODkiLCJyb2xlIjoiVVNFUiIsImlhdCI6MTY3OTEwMDE2NiwiZXhwIjoxNjc5MTAzNzY2fQ.qIoN1nKjIvjpNBs-iWgiIVJKiTrr6jHSpJNv9SGtZY8",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/checklist/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"checklist",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/checklist/{checklistId}/item",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiUml6a2kiLCJwaG9uZSI6IjA4MTI0NTY3ODkiLCJyb2xlIjoiVVNFUiIsImlhdCI6MTY3OTEwMDE2NiwiZXhwIjoxNjc5MTAzNzY2fQ.qIoN1nKjIvjpNBs-iWgiIVJKiTrr6jHSpJNv9SGtZY8",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/checklist/3/item",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"checklist",
+						"3",
+						"item"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/checklist/{checklistId}/item",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiUml6a2kiLCJwaG9uZSI6IjA4MTI0NTY3ODkiLCJyb2xlIjoiVVNFUiIsImlhdCI6MTY3OTEwMDE2NiwiZXhwIjoxNjc5MTAzNzY2fQ.qIoN1nKjIvjpNBs-iWgiIVJKiTrr6jHSpJNv9SGtZY8",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"itemName\": \"item 3\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/checklist/3/item",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"checklist",
+						"3",
+						"item"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/checklist/{checklistId}/item/{itemId}",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiUml6a2kiLCJwaG9uZSI6IjA4MTI0NTY3ODkiLCJyb2xlIjoiVVNFUiIsImlhdCI6MTY3OTEwMDE2NiwiZXhwIjoxNjc5MTAzNzY2fQ.qIoN1nKjIvjpNBs-iWgiIVJKiTrr6jHSpJNv9SGtZY8",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/checklist/3/item/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"checklist",
+						"3",
+						"item",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/checklist/{checklistId}/item/{itemId}",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiUml6a2kiLCJwaG9uZSI6IjA4MTI0NTY3ODkiLCJyb2xlIjoiVVNFUiIsImlhdCI6MTY3OTEwMDE2NiwiZXhwIjoxNjc5MTAzNzY2fQ.qIoN1nKjIvjpNBs-iWgiIVJKiTrr6jHSpJNv9SGtZY8",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/checklist/3/item/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"checklist",
+						"3",
+						"item",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/checklist/{checklistId}/item/{itemId}",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiUml6a2kiLCJwaG9uZSI6IjA4MTI0NTY3ODkiLCJyb2xlIjoiVVNFUiIsImlhdCI6MTY3OTEwMDE2NiwiZXhwIjoxNjc5MTAzNzY2fQ.qIoN1nKjIvjpNBs-iWgiIVJKiTrr6jHSpJNv9SGtZY8",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/checklist/3/item/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"checklist",
+						"3",
+						"item",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/checklist/{checklistId}/item/rename/{itemId}",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiUml6a2kiLCJwaG9uZSI6IjA4MTI0NTY3ODkiLCJyb2xlIjoiVVNFUiIsImlhdCI6MTY3OTEwMDE2NiwiZXhwIjoxNjc5MTAzNzY2fQ.qIoN1nKjIvjpNBs-iWgiIVJKiTrr6jHSpJNv9SGtZY8",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"itemName\": \"Item Baru\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/checklist/3/item/rename/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"checklist",
+						"3",
+						"item",
+						"rename",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
